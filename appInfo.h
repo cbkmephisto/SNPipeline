@@ -150,4 +150,10 @@ namespace libcbk
         }
     };
 }
+
+
+#define I(...)              lg.generalLog("I", __VA_ARGS__)
+#define E(str, ...)         lg.generalLog("E", str, 1, __VA_ARGS__)
+#define F(str, ...)         lg.generalLog("F", str, 1, __VA_ARGS__)
+
 #endif /* defined(__libHailins__appInfo__) */

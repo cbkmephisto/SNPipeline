@@ -30,9 +30,6 @@
 //#include "finalReport.h"
 //#include "affyInput.h"
 
-#define I(...)              lg.generalLog("I", __VA_ARGS__)
-#define E(str, ...)         lg.generalLog("E", str, 1, __VA_ARGS__)
-#define F(str, ...)         lg.generalLog("F", str, 1, __VA_ARGS__)
 
 using namespace std;
 namespace libcbk

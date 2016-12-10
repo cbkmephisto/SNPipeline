@@ -5,7 +5,7 @@ GPP=g++
 FLAGS=-c -pipe -O3 -g -funsafe-math-optimizations # -Wall -W
 CC=$(GPP) $(FLAGS)
 LK=$(GPP)
-INC=-Ilibcbk
+# TODO: change path to eigen3 header files folder, needed by SNPipeline.abg2bin
 INCEIGEN=-I/opt/local/include/eigen3/
 
 all:    bin/SNPipeline\
@@ -17,10 +17,54 @@ all:    bin/SNPipeline\
         bin/SNPipeline.abgExcl\
 		bin/gReplace\
 		bin/ggrep\
-        bin/SNPipeline.abg2bin
+		bin/abg2FImpute\
+		bin/mapUniter\
+		bin/abg2findhap\
+		bin/fhout2fiout\
+		bin/fhout2hapview\
+		bin/fout2abg\
+		bin/fout2haplotype\
+		bin/abg2M\
+		bin/bout2abg\
+		bin/bout2haplotype\
+		bin/vcf2haplotype\
+		bin/SNPipeline.abg2bin
 
 
 ############ link
+bin/vcf2haplotype: obj/vcf2haplotype.o obj/logger.o obj/VCF_Record.o
+	$(LK) $(INC) obj/vcf2haplotype.o obj/logger.o obj/VCF_Record.o -o bin/vcf2haplotype
+
+bin/bout2haplotype: obj/bout2haplotype.o obj/logger.o obj/geneticMap.o obj/beagleOutput.o
+	$(LK) $(INC) obj/bout2haplotype.o obj/logger.o obj/geneticMap.o obj/beagleOutput.o -o bin/bout2haplotype
+
+bin/bout2abg: obj/bout2abg.o obj/logger.o obj/geneticMap.o obj/beagleOutput.o
+	$(LK) $(INC) obj/bout2abg.o obj/logger.o obj/geneticMap.o obj/beagleOutput.o -o bin/bout2abg
+
+bin/abg2M: obj/abg2M.o
+	$(LK) $(INC) obj/abg2M.o -o bin/abg2M
+
+bin/fout2haplotype: obj/fout2haplotype.o
+	$(LK) $(INC) obj/fout2haplotype.o obj/logger.o -o bin/fout2haplotype
+
+bin/fout2abg: obj/fout2abg.o
+	$(LK) $(INC) obj/fout2abg.o obj/logger.o -o bin/fout2abg
+
+bin/abg2findhap: obj/abg2findhap.o
+	$(LK) $(INC) obj/abg2findhap.o obj/logger.o -o bin/abg2findhap
+
+bin/fhout2fiout: obj/fhout2fiout.o
+	$(LK) $(INC) obj/fhout2fiout.o obj/logger.o -o bin/fhout2fiout
+
+bin/fhout2hapview: obj/fhout2hapview.o
+	$(LK) $(INC) obj/fhout2hapview.o obj/logger.o -o bin/fhout2hapview
+
+bin/mapUniter: obj/mapUniter.o
+	$(LK) $(INC) obj/mapUniter.o obj/logger.o -o bin/mapUniter
+
+bin/abg2FImpute: obj/abg2FImpute.o
+	$(LK) $(INC) obj/abg2FImpute.o obj/logger.o -o bin/abg2FImpute
+
 bin/gReplace: obj/gReplace.o
 	$(LK) $(INC) obj/gReplace.o -o bin/gReplace
 
@@ -52,6 +96,48 @@ bin/SNPipeline.mergingAB: obj/SNPipeline.mergingAB.o obj/logger.o
 	$(LK) $(INC) obj/logger.o obj/SNPipeline.mergingAB.o -o bin/SNPipeline.mergingAB
 
 ############# obj
+obj/VCF_Record.o:
+	$(CC) $(CFLAGS) $(INC) bout2abg/VCF_Record.cpp -o obj/VCF_Record.o
+
+obj/vcf2haplotype.o:
+	$(CC) $(CFLAGS) $(INC) bout2abg/vcf2haplotype.cpp -o obj/vcf2haplotype.o
+
+obj/bout2haplotype.o:
+	$(CC) $(CFLAGS) $(INC) bout2abg/bout2haplotype.cpp -o obj/bout2haplotype.o
+
+obj/geneticMap.o:
+	$(CC) $(CFLAGS) $(INC) bout2abg/geneticMap.cpp -o obj/geneticMap.o
+
+obj/beagleOutput.o:
+	$(CC) $(CFLAGS) $(INC) bout2abg/beagleOutput.cpp -o obj/beagleOutput.o
+
+obj/bout2abg.o:
+	$(CC) $(CFLAGS) $(INC) bout2abg/bout2abg.cpp -o obj/bout2abg.o
+
+obj/abg2M.o: abg2M/abg2M.cpp
+	$(CC) $(CFLAGS) $(INC) abg2M/abg2M.cpp -o obj/abg2M.o
+
+obj/fout2haplotype.o: fout2haplotype/fout2haplotype.cpp
+	$(CC) $(CFLAGS) $(INC) fout2haplotype/fout2haplotype.cpp -o obj/fout2haplotype.o
+
+obj/fout2abg.o: fout2abg/fout2abg.cpp
+	$(CC) $(CFLAGS) $(INC) fout2abg/fout2abg.cpp -o obj/fout2abg.o
+
+obj/abg2findhap.o: abg2findhap/abg2findhap.cpp
+	$(CC) $(CFLAGS) $(INC) abg2findhap/abg2findhap.cpp -o obj/abg2findhap.o
+
+obj/fhout2fiout.o: abg2findhap/fhout2fiout.cpp
+	$(CC) $(CFLAGS) $(INC) abg2findhap/fhout2fiout.cpp -o obj/fhout2fiout.o
+
+obj/fhout2hapview.o: abg2findhap/fhout2hapview.cpp
+	$(CC) $(CFLAGS) $(INC) abg2findhap/fhout2hapview.cpp -o obj/fhout2hapview.o
+
+obj/mapUniter.o: mapUniter/mapUniter.cpp
+	$(CC) $(CFLAGS) $(INC) mapUniter/mapUniter.cpp -o obj/mapUniter.o
+
+obj/abg2FImpute.o: abg2FImpute/abg2FImpute.cpp
+	$(CC) $(CFLAGS) $(INC) abg2FImpute/abg2FImpute.cpp -o obj/abg2FImpute.o
+
 obj/gReplace.o: gReplace/gReplace.cpp
 	$(CC) $(CFLAGS) $(INC) gReplace/gReplace.cpp -o obj/gReplace.o
 
