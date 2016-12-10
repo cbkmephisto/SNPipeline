@@ -1,0 +1,23 @@
+* SNPipeline.abg2bin REQUIRES EIGEN for example /opt/local/include/eigen3/ in the makefile
+
+* finalReport file format
+
+* affyInput file format
+
+* map format
+    - whitespace / tab delimited
+    - 3 columns
+    - lines started with '#' will be skipped, could be header
+    - chr30 = X
+    - chr31 = MT
+    - chr33 = Y
+    - example
+/***********************
+# string    unsigned    long
+# SNP_ID    chr         pos
+Bovine00078  4          2580021
+Bovine00038 14          2580121
+Bovine00048 15          2580221
+Bovine00058 16          2580321
+Bovine00068 17          2580421
+************************/
