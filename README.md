@@ -1,4 +1,4 @@
-# SNPipeline
+# SNPipeline [![Build Status](https://travis-ci.org/cbkmephisto/SNPipeline.svg?branch=master)](https://travis-ci.org/cbkmephisto/SNPipeline)
 
 - Tool set for converting AB genotype calls from Illumina BeadExpress FinalFormat files or Affymetrix genotype files into a simpler "one row per animal" format, namely **ab-genotype** file.
 - Tool set for converting **ab-genotype** files to appropriate format for genomic selection tool GenSel.
