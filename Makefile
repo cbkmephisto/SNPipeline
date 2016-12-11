@@ -25,7 +25,7 @@ all:    bin/SNPipeline\
 		bin/fout2abg\
 		bin/fout2haplotype\
 		bin/abg2M\
-		bin/bout2abg\
+		bin/bout2genotype\
 		bin/bout2haplotype\
 		bin/vcf2haplotype\
 		bin/SNPipeline.abg2bin
@@ -38,8 +38,8 @@ bin/vcf2haplotype: obj/vcf2haplotype.o obj/logger.o obj/VCF_Record.o
 bin/bout2haplotype: obj/bout2haplotype.o obj/logger.o obj/geneticMap.o obj/beagleOutput.o
 	$(LK) $(INC) obj/bout2haplotype.o obj/logger.o obj/geneticMap.o obj/beagleOutput.o -o bin/bout2haplotype
 
-bin/bout2abg: obj/bout2abg.o obj/logger.o obj/geneticMap.o obj/beagleOutput.o
-	$(LK) $(INC) obj/bout2abg.o obj/logger.o obj/geneticMap.o obj/beagleOutput.o -o bin/bout2abg
+bin/bout2genotype: obj/bout2genotype.o obj/logger.o obj/geneticMap.o obj/beagleOutput.o
+	$(LK) $(INC) obj/bout2genotype.o obj/logger.o obj/geneticMap.o obj/beagleOutput.o -o bin/bout2genotype
 
 bin/abg2M: obj/abg2M.o
 	$(LK) $(INC) obj/abg2M.o -o bin/abg2M
@@ -97,22 +97,22 @@ bin/SNPipeline.mergingAB: obj/SNPipeline.mergingAB.o obj/logger.o
 
 ############# obj
 obj/VCF_Record.o:
-	$(CC) $(CFLAGS) $(INC) bout2abg/VCF_Record.cpp -o obj/VCF_Record.o
+	$(CC) $(CFLAGS) $(INC) bout2genotype/VCF_Record.cpp -o obj/VCF_Record.o
 
 obj/vcf2haplotype.o:
-	$(CC) $(CFLAGS) $(INC) bout2abg/vcf2haplotype.cpp -o obj/vcf2haplotype.o
+	$(CC) $(CFLAGS) $(INC) bout2genotype/vcf2haplotype.cpp -o obj/vcf2haplotype.o
 
 obj/bout2haplotype.o:
-	$(CC) $(CFLAGS) $(INC) bout2abg/bout2haplotype.cpp -o obj/bout2haplotype.o
+	$(CC) $(CFLAGS) $(INC) bout2genotype/bout2haplotype.cpp -o obj/bout2haplotype.o
 
 obj/geneticMap.o:
-	$(CC) $(CFLAGS) $(INC) bout2abg/geneticMap.cpp -o obj/geneticMap.o
+	$(CC) $(CFLAGS) $(INC) bout2genotype/geneticMap.cpp -o obj/geneticMap.o
 
 obj/beagleOutput.o:
-	$(CC) $(CFLAGS) $(INC) bout2abg/beagleOutput.cpp -o obj/beagleOutput.o
+	$(CC) $(CFLAGS) $(INC) bout2genotype/beagleOutput.cpp -o obj/beagleOutput.o
 
-obj/bout2abg.o:
-	$(CC) $(CFLAGS) $(INC) bout2abg/bout2abg.cpp -o obj/bout2abg.o
+obj/bout2genotype.o:
+	$(CC) $(CFLAGS) $(INC) bout2genotype/bout2genotype.cpp -o obj/bout2genotype.o
 
 obj/abg2M.o: abg2M/abg2M.cpp
 	$(CC) $(CFLAGS) $(INC) abg2M/abg2M.cpp -o obj/abg2M.o
