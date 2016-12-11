@@ -1,0 +1,10 @@
+install:
+- sudo apt-get update -qq
+- sudo apt-get install -qq eigen3
+
+language: cpp
+compiler: g++
+script: make -j4
+os:
+- linux
+- os X
