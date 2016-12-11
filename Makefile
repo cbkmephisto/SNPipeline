@@ -27,8 +27,8 @@ all:    bin/SNPipeline\
 		bin/abg2M\
 		bin/bout2genotype\
 		bin/bout2haplotype\
-		bin/vcf2haplotype\
-		bin/SNPipeline.abg2bin
+		bin/vcf2haplotype
+#		bin/SNPipeline.abg2bin
 
 
 ############ link
