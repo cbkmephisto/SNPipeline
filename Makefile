@@ -6,29 +6,31 @@ FLAGS=-c -pipe -O3 -g -funsafe-math-optimizations # -Wall -W
 CC=$(GPP) $(FLAGS)
 LK=$(GPP)
 # TODO: change path to eigen3 header files folder, needed by SNPipeline.abg2bin
-INCEIGEN=-I/opt/local/include/eigen3/
+# for Ubuntu users on 16.10, before launching 'make', try
+# sudo apt-get install libeigen3-dev
+INCEIGEN=-I/opt/local/include/eigen3/ -I/usr/include/eigen3/
 
-all:    bin/SNPipeline\
-        bin/SNPipeline.mergingAB\
-        bin/finalReportReformer\
-        bin/SNPipeline.pooledAB2VCF41\
-        bin/SNPipeline.VCF2AB\
-        bin/SNPipeline.trimDown2Map\
-        bin/SNPipeline.abgExcl\
-		bin/gReplace\
-		bin/ggrep\
-		bin/abg2FImpute\
-		bin/mapUniter\
-		bin/abg2findhap\
-		bin/fhout2fiout\
-		bin/fhout2hapview\
-		bin/fout2abg\
-		bin/fout2haplotype\
-		bin/abg2M\
-		bin/bout2genotype\
-		bin/bout2haplotype\
-		bin/vcf2haplotype
-#		bin/SNPipeline.abg2bin
+all:	bin/SNPipeline\
+	bin/SNPipeline.mergingAB\
+	bin/finalReportReformer\
+	bin/SNPipeline.pooledAB2VCF41\
+	bin/SNPipeline.VCF2AB\
+	bin/SNPipeline.trimDown2Map\
+	bin/SNPipeline.abgExcl\
+	bin/gReplace\
+	bin/ggrep\
+	bin/abg2FImpute\
+	bin/mapUniter\
+	bin/abg2findhap\
+	bin/fhout2fiout\
+	bin/fhout2hapview\
+	bin/fout2abg\
+	bin/fout2haplotype\
+	bin/abg2M\
+	bin/bout2genotype\
+	bin/bout2haplotype\
+	bin/vcf2haplotype\
+	bin/SNPipeline.abg2bin
 
 
 ############ link
