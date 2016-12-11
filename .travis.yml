@@ -4,6 +4,7 @@ install:
 
 language: cpp
 compiler: g++
+script: make
 os:
 - linux
 - os X
