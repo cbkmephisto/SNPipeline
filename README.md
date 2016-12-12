@@ -13,11 +13,11 @@
 ```
 make
 ```
-or
+    or
 ```
 make -j8
 ```
-may use 8 cores to run in parallel
+    may use 8 cores to run in parallel
 
 - Notice that ```SNPipeline.abg2bin``` depends on [eigen](http://eigen.tuxfamily.org/index.php), but other tools won't be affected if not installed.
 - All executables will be created under the folder
@@ -28,8 +28,6 @@ bin/
 ## Executables
 Run them without parameter to see syntaxes.
 
-## Executables
-Run them without parameter to see syntaxes.
 
 #### SNPipeline
 > Creates **ab-genotype** file from finalReport/affyInput file(s).
