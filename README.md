@@ -20,6 +20,16 @@ make -j8
     may use 8 cores to run in parallel
 
 - Notice that ```SNPipeline.abg2bin``` depends on [eigen](http://eigen.tuxfamily.org/index.php), but other tools won't be affected if not installed.
+  - for Ubuntu Linux, install ```libeigen3-dev``` before ```make```
+  ```
+  sudo apt-get update && sudo apt-get install libeigen3-dev
+  ```
+  - for Mac OS X, I used ```port```:
+  ```
+  sudo port install eigen3
+  ```
+  - ```Makefile``` may need to be modified for different systems.
+
 - All executables will be created under the folder
 ```
 bin/
