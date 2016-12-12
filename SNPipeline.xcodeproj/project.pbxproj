@@ -10,6 +10,16 @@
 		9B00B9AC189AF62700B34C77 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B00B9AB189AF62700B34C77 /* main.cpp */; };
 		9B00B9AE189AF62700B34C77 /* finalReportReformer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B00B9AD189AF62700B34C77 /* finalReportReformer.1 */; };
 		9B00B9B2189AFFDD00B34C77 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B71AFCD183EB30500C285E7 /* logger.cpp */; };
+		9B0E01A01DFDAFEC003B4C7B /* bout2haplotype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E01981DFDAFEC003B4C7B /* bout2haplotype.cpp */; };
+		9B0E01A11DFDAFEC003B4C7B /* geneticMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E01991DFDAFEC003B4C7B /* geneticMap.cpp */; };
+		9B0E01A41DFDB014003B4C7B /* vcf2haplotype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E019D1DFDAFEC003B4C7B /* vcf2haplotype.cpp */; };
+		9B0E01A51DFDB020003B4C7B /* VCF_Record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E019B1DFDAFEC003B4C7B /* VCF_Record.cpp */; };
+		9B0E01A61DFDB031003B4C7B /* beagleOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E01951DFDAFEC003B4C7B /* beagleOutput.cpp */; };
+		9B0E01A71DFDB043003B4C7B /* bout2genotype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E01971DFDAFEC003B4C7B /* bout2genotype.cpp */; };
+		9B0E01A81DFDB08E003B4C7B /* beagleOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E01951DFDAFEC003B4C7B /* beagleOutput.cpp */; };
+		9B0E01A91DFDB096003B4C7B /* geneticMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E01991DFDAFEC003B4C7B /* geneticMap.cpp */; };
+		9B0E01AA1DFDB096003B4C7B /* geneticMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E01991DFDAFEC003B4C7B /* geneticMap.cpp */; };
+		9B0E01AB1DFDB0A7003B4C7B /* bout2haplotype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E01981DFDAFEC003B4C7B /* bout2haplotype.cpp */; };
 		9B31035318BFB06400FECEAC /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B71AFCD183EB30500C285E7 /* logger.cpp */; };
 		9B37B100187C87EE008B6F91 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B37B0FF187C87EE008B6F91 /* main.cpp */; };
 		9B37B102187C87EE008B6F91 /* ReadMe.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9B37B101187C87EE008B6F91 /* ReadMe.1 */; };
@@ -29,17 +39,9 @@
 		9B39CA241DFCBFE300EFBFB1 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B71AFCD183EB30500C285E7 /* logger.cpp */; };
 		9B39CA271DFCC00A00EFBFB1 /* fout2haplotype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B39CA251DFCC00A00EFBFB1 /* fout2haplotype.cpp */; };
 		9B39CA341DFCC2FF00EFBFB1 /* abg2M.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B39CA331DFCC2FF00EFBFB1 /* abg2M.cpp */; };
-		9B39CA411DFCC4E800EFBFB1 /* bout2abg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B39CA401DFCC4E800EFBFB1 /* bout2abg.cpp */; };
 		9B39CA421DFCC4F500EFBFB1 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B71AFCD183EB30500C285E7 /* logger.cpp */; };
-		9B39CA451DFCC54B00EFBFB1 /* geneticMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B39CA431DFCC54B00EFBFB1 /* geneticMap.cpp */; };
-		9B39CA481DFCC58200EFBFB1 /* beagleOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B39CA461DFCC58200EFBFB1 /* beagleOutput.cpp */; };
-		9B39CA5B1DFCC8A200EFBFB1 /* bout2haplotype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B39CA491DFCC80100EFBFB1 /* bout2haplotype.cpp */; };
-		9B39CA5C1DFCC8DC00EFBFB1 /* beagleOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B39CA461DFCC58200EFBFB1 /* beagleOutput.cpp */; };
-		9B39CA5D1DFCC8E200EFBFB1 /* geneticMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B39CA431DFCC54B00EFBFB1 /* geneticMap.cpp */; };
 		9B39CA5E1DFCC8EE00EFBFB1 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B71AFCD183EB30500C285E7 /* logger.cpp */; };
-		9B39CA6A1DFCC98900EFBFB1 /* vcf2haplotype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B39CA4A1DFCC80100EFBFB1 /* vcf2haplotype.cpp */; };
 		9B39CA6B1DFCC99A00EFBFB1 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B71AFCD183EB30500C285E7 /* logger.cpp */; };
-		9B39CA6C1DFCC9C000EFBFB1 /* VCF_Record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B39CA4D1DFCC83100EFBFB1 /* VCF_Record.cpp */; };
 		9B44E1D318AA94C2000D16FF /* SNPipeline_pooledAB2VCF41.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B44E1D118AA94C2000D16FF /* SNPipeline_pooledAB2VCF41.cpp */; };
 		9B44E1D418AA9589000D16FF /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B71AFCD183EB30500C285E7 /* logger.cpp */; };
 		9B5F04501899725A00ADA790 /* data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F044E1899725A00ADA790 /* data.cpp */; };
@@ -258,6 +260,15 @@
 		9B00B9A9189AF62700B34C77 /* finalReportReformer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = finalReportReformer; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B00B9AB189AF62700B34C77 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9B00B9AD189AF62700B34C77 /* finalReportReformer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = finalReportReformer.1; sourceTree = "<group>"; };
+		9B0E01951DFDAFEC003B4C7B /* beagleOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = beagleOutput.cpp; path = bout2genotype/beagleOutput.cpp; sourceTree = SOURCE_ROOT; };
+		9B0E01961DFDAFEC003B4C7B /* beagleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = beagleOutput.h; path = bout2genotype/beagleOutput.h; sourceTree = SOURCE_ROOT; };
+		9B0E01971DFDAFEC003B4C7B /* bout2genotype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bout2genotype.cpp; path = bout2genotype/bout2genotype.cpp; sourceTree = SOURCE_ROOT; };
+		9B0E01981DFDAFEC003B4C7B /* bout2haplotype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bout2haplotype.cpp; path = bout2genotype/bout2haplotype.cpp; sourceTree = SOURCE_ROOT; };
+		9B0E01991DFDAFEC003B4C7B /* geneticMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = geneticMap.cpp; path = bout2genotype/geneticMap.cpp; sourceTree = SOURCE_ROOT; };
+		9B0E019A1DFDAFEC003B4C7B /* geneticMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = geneticMap.h; path = bout2genotype/geneticMap.h; sourceTree = SOURCE_ROOT; };
+		9B0E019B1DFDAFEC003B4C7B /* VCF_Record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VCF_Record.cpp; path = bout2genotype/VCF_Record.cpp; sourceTree = SOURCE_ROOT; };
+		9B0E019C1DFDAFEC003B4C7B /* VCF_Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCF_Record.h; path = bout2genotype/VCF_Record.h; sourceTree = SOURCE_ROOT; };
+		9B0E019D1DFDAFEC003B4C7B /* vcf2haplotype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vcf2haplotype.cpp; path = bout2genotype/vcf2haplotype.cpp; sourceTree = SOURCE_ROOT; };
 		9B283D6B189861CA004DDBDF /* RETIRED_CODE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RETIRED_CODE.h; sourceTree = "<group>"; };
 		9B37B0FD187C87EE008B6F91 /* SNPipeline.trimDown2Map */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SNPipeline.trimDown2Map; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B37B0FF187C87EE008B6F91 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -282,16 +293,7 @@
 		9B39CA261DFCC00A00EFBFB1 /* fout2haplotype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fout2haplotype.h; sourceTree = "<group>"; };
 		9B39CA2C1DFCC2E000EFBFB1 /* abg2M */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = abg2M; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B39CA331DFCC2FF00EFBFB1 /* abg2M.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abg2M.cpp; sourceTree = "<group>"; };
-		9B39CA391DFCC4C300EFBFB1 /* bout2abg */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bout2abg; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B39CA401DFCC4E800EFBFB1 /* bout2abg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bout2abg.cpp; sourceTree = "<group>"; };
-		9B39CA431DFCC54B00EFBFB1 /* geneticMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = geneticMap.cpp; sourceTree = "<group>"; };
-		9B39CA441DFCC54B00EFBFB1 /* geneticMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geneticMap.h; sourceTree = "<group>"; };
-		9B39CA461DFCC58200EFBFB1 /* beagleOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = beagleOutput.cpp; sourceTree = "<group>"; };
-		9B39CA471DFCC58200EFBFB1 /* beagleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = beagleOutput.h; sourceTree = "<group>"; };
-		9B39CA491DFCC80100EFBFB1 /* bout2haplotype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bout2haplotype.cpp; sourceTree = "<group>"; };
-		9B39CA4A1DFCC80100EFBFB1 /* vcf2haplotype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vcf2haplotype.cpp; sourceTree = "<group>"; };
-		9B39CA4D1DFCC83100EFBFB1 /* VCF_Record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VCF_Record.cpp; sourceTree = "<group>"; };
-		9B39CA4E1DFCC83100EFBFB1 /* VCF_Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCF_Record.h; sourceTree = "<group>"; };
+		9B39CA391DFCC4C300EFBFB1 /* bout2genotype */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bout2genotype; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B39CA541DFCC89400EFBFB1 /* bout2haplotype */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bout2haplotype; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B39CA631DFCC97E00EFBFB1 /* vcf2haplotype */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vcf2haplotype; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B44E1C818AA9490000D16FF /* SNPipeline.pooledAB2VCF41 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SNPipeline.pooledAB2VCF41; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -554,19 +556,20 @@
 			path = abg2M;
 			sourceTree = "<group>";
 		};
-		9B39CA3A1DFCC4C300EFBFB1 /* bout2abg */ = {
+		9B39CA3A1DFCC4C300EFBFB1 /* bout2genotype */ = {
 			isa = PBXGroup;
 			children = (
-				9B39CA4D1DFCC83100EFBFB1 /* VCF_Record.cpp */,
-				9B39CA4E1DFCC83100EFBFB1 /* VCF_Record.h */,
-				9B39CA491DFCC80100EFBFB1 /* bout2haplotype.cpp */,
-				9B39CA4A1DFCC80100EFBFB1 /* vcf2haplotype.cpp */,
-				9B39CA461DFCC58200EFBFB1 /* beagleOutput.cpp */,
-				9B39CA471DFCC58200EFBFB1 /* beagleOutput.h */,
-				9B39CA431DFCC54B00EFBFB1 /* geneticMap.cpp */,
-				9B39CA441DFCC54B00EFBFB1 /* geneticMap.h */,
-				9B39CA401DFCC4E800EFBFB1 /* bout2abg.cpp */,
+				9B0E01951DFDAFEC003B4C7B /* beagleOutput.cpp */,
+				9B0E01961DFDAFEC003B4C7B /* beagleOutput.h */,
+				9B0E01971DFDAFEC003B4C7B /* bout2genotype.cpp */,
+				9B0E01981DFDAFEC003B4C7B /* bout2haplotype.cpp */,
+				9B0E01991DFDAFEC003B4C7B /* geneticMap.cpp */,
+				9B0E019A1DFDAFEC003B4C7B /* geneticMap.h */,
+				9B0E019B1DFDAFEC003B4C7B /* VCF_Record.cpp */,
+				9B0E019C1DFDAFEC003B4C7B /* VCF_Record.h */,
+				9B0E019D1DFDAFEC003B4C7B /* vcf2haplotype.cpp */,
 			);
+			name = bout2genotype;
 			path = bout2abg;
 			sourceTree = "<group>";
 		};
@@ -604,7 +607,7 @@
 				9B39CA0C1DFCBE8A00EFBFB1 /* fout2abg */,
 				9B39CA1D1DFCBFC800EFBFB1 /* fout2haplotype */,
 				9B39CA2D1DFCC2E000EFBFB1 /* abg2M */,
-				9B39CA3A1DFCC4C300EFBFB1 /* bout2abg */,
+				9B39CA3A1DFCC4C300EFBFB1 /* bout2genotype */,
 				9B71AFBE183EB27100C285E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -630,7 +633,7 @@
 				9B39CA0B1DFCBE8A00EFBFB1 /* fout2abg */,
 				9B39CA1C1DFCBFC800EFBFB1 /* fout2haplotype */,
 				9B39CA2C1DFCC2E000EFBFB1 /* abg2M */,
-				9B39CA391DFCC4C300EFBFB1 /* bout2abg */,
+				9B39CA391DFCC4C300EFBFB1 /* bout2genotype */,
 				9B39CA541DFCC89400EFBFB1 /* bout2haplotype */,
 				9B39CA631DFCC97E00EFBFB1 /* vcf2haplotype */,
 			);
@@ -873,9 +876,9 @@
 			productReference = 9B39CA2C1DFCC2E000EFBFB1 /* abg2M */;
 			productType = "com.apple.product-type.tool";
 		};
-		9B39CA381DFCC4C300EFBFB1 /* bout2abg */ = {
+		9B39CA381DFCC4C300EFBFB1 /* bout2genotype */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B39CA3D1DFCC4C300EFBFB1 /* Build configuration list for PBXNativeTarget "bout2abg" */;
+			buildConfigurationList = 9B39CA3D1DFCC4C300EFBFB1 /* Build configuration list for PBXNativeTarget "bout2genotype" */;
 			buildPhases = (
 				9B39CA351DFCC4C300EFBFB1 /* Sources */,
 				9B39CA361DFCC4C300EFBFB1 /* Frameworks */,
@@ -885,9 +888,9 @@
 			);
 			dependencies = (
 			);
-			name = bout2abg;
+			name = bout2genotype;
 			productName = bout2abg;
-			productReference = 9B39CA391DFCC4C300EFBFB1 /* bout2abg */;
+			productReference = 9B39CA391DFCC4C300EFBFB1 /* bout2genotype */;
 			productType = "com.apple.product-type.tool";
 		};
 		9B39CA531DFCC89400EFBFB1 /* bout2haplotype */ = {
@@ -1140,7 +1143,7 @@
 				9B39CA0A1DFCBE8A00EFBFB1 /* fout2abg */,
 				9B39CA1B1DFCBFC800EFBFB1 /* fout2haplotype */,
 				9B39CA2B1DFCC2E000EFBFB1 /* abg2M */,
-				9B39CA381DFCC4C300EFBFB1 /* bout2abg */,
+				9B39CA381DFCC4C300EFBFB1 /* bout2genotype */,
 				9B39CA531DFCC89400EFBFB1 /* bout2haplotype */,
 				9B39CA621DFCC97E00EFBFB1 /* vcf2haplotype */,
 			);
@@ -1241,10 +1244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B39CA451DFCC54B00EFBFB1 /* geneticMap.cpp in Sources */,
-				9B39CA411DFCC4E800EFBFB1 /* bout2abg.cpp in Sources */,
-				9B39CA481DFCC58200EFBFB1 /* beagleOutput.cpp in Sources */,
+				9B0E01A91DFDB096003B4C7B /* geneticMap.cpp in Sources */,
+				9B0E01A81DFDB08E003B4C7B /* beagleOutput.cpp in Sources */,
 				9B39CA421DFCC4F500EFBFB1 /* logger.cpp in Sources */,
+				9B0E01A71DFDB043003B4C7B /* bout2genotype.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1252,9 +1255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B39CA5D1DFCC8E200EFBFB1 /* geneticMap.cpp in Sources */,
-				9B39CA5C1DFCC8DC00EFBFB1 /* beagleOutput.cpp in Sources */,
-				9B39CA5B1DFCC8A200EFBFB1 /* bout2haplotype.cpp in Sources */,
+				9B0E01AA1DFDB096003B4C7B /* geneticMap.cpp in Sources */,
+				9B0E01AB1DFDB0A7003B4C7B /* bout2haplotype.cpp in Sources */,
+				9B0E01A61DFDB031003B4C7B /* beagleOutput.cpp in Sources */,
 				9B39CA5E1DFCC8EE00EFBFB1 /* logger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1263,9 +1266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B39CA6C1DFCC9C000EFBFB1 /* VCF_Record.cpp in Sources */,
-				9B39CA6A1DFCC98900EFBFB1 /* vcf2haplotype.cpp in Sources */,
+				9B0E01A51DFDB020003B4C7B /* VCF_Record.cpp in Sources */,
 				9B39CA6B1DFCC99A00EFBFB1 /* logger.cpp in Sources */,
+				9B0E01A41DFDB014003B4C7B /* vcf2haplotype.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1282,8 +1285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0E01A11DFDAFEC003B4C7B /* geneticMap.cpp in Sources */,
 				9B71AFD6183EB30500C285E7 /* SNPipeline.cpp in Sources */,
 				9B5F04501899725A00ADA790 /* data.cpp in Sources */,
+				9B0E01A01DFDAFEC003B4C7B /* bout2haplotype.cpp in Sources */,
 				9B71AFD4183EB30500C285E7 /* logger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2022,6 +2027,7 @@
 				9B39C9C41DFCB97500EFBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B39C9D31DFCBAA900EFBFB1 /* Build configuration list for PBXNativeTarget "mapUniter" */ = {
 			isa = XCConfigurationList;
@@ -2030,6 +2036,7 @@
 				9B39C9D51DFCBAA900EFBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B39C9E21DFCBB3700EFBFB1 /* Build configuration list for PBXNativeTarget "abg2findhap" */ = {
 			isa = XCConfigurationList;
@@ -2038,6 +2045,7 @@
 				9B39C9E41DFCBB3700EFBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B39C9F51DFCBCC500EFBFB1 /* Build configuration list for PBXNativeTarget "fhout2fiout" */ = {
 			isa = XCConfigurationList;
@@ -2046,6 +2054,7 @@
 				9B39C9F71DFCBCC500EFBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B39CA021DFCBCFB00EFBFB1 /* Build configuration list for PBXNativeTarget "fhout2hapview" */ = {
 			isa = XCConfigurationList;
@@ -2054,6 +2063,7 @@
 				9B39CA041DFCBCFB00EFBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B39CA0F1DFCBE8A00EFBFB1 /* Build configuration list for PBXNativeTarget "fout2abg" */ = {
 			isa = XCConfigurationList;
@@ -2062,6 +2072,7 @@
 				9B39CA111DFCBE8A00EFBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B39CA201DFCBFC800EFBFB1 /* Build configuration list for PBXNativeTarget "fout2haplotype" */ = {
 			isa = XCConfigurationList;
@@ -2070,6 +2081,7 @@
 				9B39CA221DFCBFC800EFBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B39CA301DFCC2E000EFBFB1 /* Build configuration list for PBXNativeTarget "abg2M" */ = {
 			isa = XCConfigurationList;
@@ -2078,14 +2090,16 @@
 				9B39CA321DFCC2E000EFBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		9B39CA3D1DFCC4C300EFBFB1 /* Build configuration list for PBXNativeTarget "bout2abg" */ = {
+		9B39CA3D1DFCC4C300EFBFB1 /* Build configuration list for PBXNativeTarget "bout2genotype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B39CA3E1DFCC4C300EFBFB1 /* Debug */,
 				9B39CA3F1DFCC4C300EFBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B39CA581DFCC89400EFBFB1 /* Build configuration list for PBXNativeTarget "bout2haplotype" */ = {
 			isa = XCConfigurationList;
@@ -2094,6 +2108,7 @@
 				9B39CA5A1DFCC89400EFBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B39CA671DFCC97E00EFBFB1 /* Build configuration list for PBXNativeTarget "vcf2haplotype" */ = {
 			isa = XCConfigurationList;
@@ -2102,6 +2117,7 @@
 				9B39CA691DFCC97E00EFBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B44E1D018AA9490000D16FF /* Build configuration list for PBXNativeTarget "SNPipeline.pooledAB2VCF41" */ = {
 			isa = XCConfigurationList;

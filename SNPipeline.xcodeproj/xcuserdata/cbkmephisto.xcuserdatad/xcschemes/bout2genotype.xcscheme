@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9B39CA381DFCC4C300EFBFB1"
-               BuildableName = "bout2abg"
-               BlueprintName = "bout2abg"
+               BuildableName = "bout2genotype"
+               BlueprintName = "bout2genotype"
                ReferencedContainer = "container:SNPipeline.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B39CA381DFCC4C300EFBFB1"
-            BuildableName = "bout2abg"
-            BlueprintName = "bout2abg"
+            BuildableName = "bout2genotype"
+            BlueprintName = "bout2genotype"
             ReferencedContainer = "container:SNPipeline.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B39CA381DFCC4C300EFBFB1"
-            BuildableName = "bout2abg"
-            BlueprintName = "bout2abg"
+            BuildableName = "bout2genotype"
+            BlueprintName = "bout2genotype"
             ReferencedContainer = "container:SNPipeline.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B39CA381DFCC4C300EFBFB1"
-            BuildableName = "bout2abg"
-            BlueprintName = "bout2abg"
+            BuildableName = "bout2genotype"
+            BlueprintName = "bout2genotype"
             ReferencedContainer = "container:SNPipeline.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
