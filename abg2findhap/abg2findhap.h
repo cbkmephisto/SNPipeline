@@ -22,7 +22,6 @@
 //  libHailins
 //
 //  Created by Hailin Su on 11/10/14.
-//  Copyright (c) 2014 iastate. All rights reserved.
 //
 
 #ifndef libHailins_abg2findhap_h

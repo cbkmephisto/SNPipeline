@@ -22,7 +22,6 @@
 //  libHailins
 //
 //  Created by Hailin SU on 2/16/14.
-//  Copyright (c) 2014 iastate. All rights reserved.
 //
 
 #include "VCF_Record.h"

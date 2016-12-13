@@ -22,7 +22,6 @@
 //  libHailins
 //
 //  Created by Hailin SU on 11/4/13.
-//  Copyright (c) 2013 iastate. All rights reserved.
 //
 //  bout2genotype
 

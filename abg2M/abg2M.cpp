@@ -22,7 +22,6 @@
 //  libHailins
 //
 //  Created by Hailin Su on 12/14/15.
-//  Copyright © 2015 iastate. All rights reserved.
 //
 
 #include <iostream>

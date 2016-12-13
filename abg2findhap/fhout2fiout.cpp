@@ -22,7 +22,6 @@
 //  libHailins
 //
 //  Created by Hailin SU on 2014-11-16.
-//  Copyright (c) 2013 iastate. All rights reserved.
 //
 
 //===== replacing area =====

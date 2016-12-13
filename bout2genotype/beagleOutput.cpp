@@ -22,7 +22,6 @@
 //  haplotype_diversity
 //
 //  Created by Hailin SU on 9/11/13.
-//  Copyright (c) 2013 iastate. All rights reserved.
 //
 //  updated 2013-10-01
 //      I noticed that I've made a big mistake: I should not use a mapcount2hl, because the reverse-mapping couldn't correctly map from

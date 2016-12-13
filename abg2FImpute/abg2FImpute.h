@@ -22,7 +22,6 @@
 //  libHailins
 //
 //  Created by Hailin SU on 3/27/14.
-//  Copyright (c) 2014 iastate. All rights reserved.
 //
 
 #ifndef __libHailins__abg2FImpute__

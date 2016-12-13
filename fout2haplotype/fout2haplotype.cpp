@@ -22,7 +22,6 @@
 //  libHailins
 //
 //  Created by Hailin SU on 4/21/14.
-//  Copyright (c) 2014 iastate. All rights reserved.
 //
 
 #include "fout2haplotype.h"

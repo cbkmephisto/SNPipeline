@@ -22,7 +22,6 @@
 //  libHailins
 //
 //  Created by Hailin SU on 3/13/14.
-//  Copyright (c) 2014 iastate. All rights reserved.
 //
 //  vcf2haplotype
 

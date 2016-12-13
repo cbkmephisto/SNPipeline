@@ -22,7 +22,6 @@
 //  libHailins
 //
 //  Created by Hailin Su on 2015-08-10.
-//  Copyright (c) 2015 iastate. All rights reserved.
 //
 
 #include "../appInfo.h"

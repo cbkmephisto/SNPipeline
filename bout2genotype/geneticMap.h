@@ -21,7 +21,6 @@
 //  haplotype_diversity
 //
 //  Created by Hailin SU on 9/11/13.
-//  Copyright (c) 2013 iastate. All rights reserved.
 //
 
 #ifndef __haplotype_diversity__geneticMap__
