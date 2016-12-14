@@ -47,77 +47,77 @@ Run them without parameter to see syntaxes.
 > Merges **ab-genotype** files to a single **ab-genotype** file.
 
 
-### SNPipeline.trimDown2Map
+#### SNPipeline.trimDown2Map
 > Trims the given **ab-genotype** file down on SNP names according to a 3-column (SNPName  chr  pos) map file.
 
 
-### SNPipeline.pooledAB2VCF41
+#### SNPipeline.pooledAB2VCF41
 > Converts merged/unmerged **ab-genotype** files to VCF4.1 format, for imputation/phasing in beagle v4.
 
 
-### SNPipeline.VCF2AB
+#### SNPipeline.VCF2AB
 > Converts phased/unphased, but must be imputed VCF4.1 file to merged/unmerged **ab-genotype** format.
 
 
-### SNPipeline.abgExcl
+#### SNPipeline.abgExcl
 > Pipes a **ab-genotype** file to a new one, excluding animalIDs in the blackLisk file.
 
 
-### SNPipeline.abg2bin
+#### SNPipeline.abg2bin
 > Converts the **ab-genotype** file to a -10/0/10 coded genotype file, replace missing data with column mean
 
 
-### finalReportReformer
+#### finalReportReformer
 > To re-format ill-formatted finalReport files.
 
 
-### gReplace
+#### gReplace
 > To group-replace according to a given cross-reference list file.
 
 
-### ggrep
+#### ggrep
 > Group grep - greps lines from a target file acording to a given list file.
 
 
-### abg2FImpute
+#### abg2FImpute
 > Proceed **ab-genotype** file to be a FImpute genotype file format. A **snp_info.txt** file is needed.
 
 
-### mapUniter
+#### mapUniter
 > Unite 3-column ```SNP_ID chr pos``` map files to get a **snp_info.txt** genetic map file for FImpute.
 
 
-### abg2findhap
+#### abg2findhap
 > Converts **ab-genotype** files with pedigree info and genetic map info to be imputable by findhap V3.
 
 
-### fhout2hapview
+#### fhout2hapview
 > Converts findhap output to HapView input to make LD plots.
 
 
-### fhout2fiout
+#### fhout2fiout
 > Converts findhap output to the format of FImpute (because SNPipeline toolset contains other tools to convert from FImpute)
 
 
-### fout2abg
+#### fout2abg
 > Converts FImpute output file to **ab-genotype** file.
 
 
-### fout2haplotype
+#### fout2haplotype
 > Converts FImpute output file to haplotype file.
 
 
-### abg2M
+#### abg2M
 > Converts **ab-genotype** file to recoded (defined by a rule file) dense genotype matrix file.
 
 
-### bout2genotype
+#### bout2genotype
 > Reads beagle v3 output files to generate files for doing SNPRelate PCA (matrix: 0-1-2 & SNP-in-row genotype files).
 
 
-### bout2haplotype
+#### bout2haplotype
 > Reads beagle v3 output files to generate haplotype files (matrix: 0-1 & SNP-in-col & window-grouped haplotype files).
 
 
-### vcf2haplotype
+#### vcf2haplotype
 > Reads beagle v4 phased output vcf format, converting to haplotype files.
