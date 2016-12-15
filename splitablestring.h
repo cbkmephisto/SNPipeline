@@ -1,4 +1,13 @@
 /*
+ * Part of this file adopted codes from matvec, a free software published under
+ *     the terms of the GNU Library General Public License version 2.
+ *
+ * Contributors of these codes (sorted in alphabetic order):
+ *     David Habier
+ *     Rohan L. Fernando
+ *     Tianlin Wang
+ */
+/*
  * Copyright (c) 2016 Hailin Su, ISU NBCEC
  *
  * This file is part of SNPipeline.
