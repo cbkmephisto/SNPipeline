@@ -689,6 +689,10 @@ namespace libcbk
                 {
                     cout << endl;
                     E("siss", "UNEXPECTED EOF while loading data for sample", i+1, ":", vecStrx[1].c_str());
+                    E("si", "    sample offset (0-based):", i);
+                    E("si", "    SNP_ID offset (0-based):", j);
+                    E("s", "One possible cause of this error, is that in the final report file, the number of samples reported in the header part, is larger than the number of samples it is actually holding. Try launching the following unix command to see actual number of samples in the final report file:");
+                    E("s", "    awk 'NR>10{print $2}' <finalReportFile> | uniq -c | awk 'NF==2' | wc -l");
                     E("s", "BBBBBBBBBBBBBBBBBBBad finalReport file, aborting. X");
                     infs.close();
                     return -6;
