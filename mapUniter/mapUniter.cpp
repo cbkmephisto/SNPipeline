@@ -42,9 +42,9 @@ namespace libcbk
     mapUniter::mapUniter(int argc, const char * argv[])
     {
         progName    = "mapUniter";
-        version     = "2014-03-24 17:32 CDT";
+        version     = "2017-09-14 20:02 CDT";
         created     = "2014-03-24";
-        updated     = "N/A";
+        updated     = "2017-09-14 boundary check in comparing SNP pos";
         descrip     = "Unite map files to get a snp_info file for FImpute.";
         displayInfo();
         lg.initLogger();
@@ -53,6 +53,7 @@ namespace libcbk
         /*
          updates
          2013-03-24 init
+         2017-09-14 boundary check in comparing SNP pos
          */
     }
 
@@ -61,7 +62,7 @@ namespace libcbk
         makeSure(argc >= 3, argv[0], "map1 map2 (*)");
 
         map<unsigned long, vector<SNP> > mapOfMaps;  // map < nSNPs - vector >
-        unsigned i, j, p1;
+        unsigned long i, j, p1;
 
         for(unsigned argind=1; argind<argc; ++argind)
         {
@@ -84,7 +85,7 @@ namespace libcbk
             unsigned long FILE_SIZE(0.01*tellFileSize(argv[argind]));
             if(FILE_SIZE<100)
                 FILE_SIZE=100;
-            unsigned linesRead(0);
+            unsigned long linesRead(0);
             set<string> setSNPName;
             while(getline(infs, aLine))  // foreach line of mapFile
             {
@@ -157,7 +158,7 @@ namespace libcbk
         ofs << endl;
 
         vector < map<unsigned long, vector<SNP> >::reverse_iterator > vecPtSNP; // vecPtSNP[i]->second is the vector of SNP
-        vector < unsigned > vecInd, vecLocalInd;
+        vector < unsigned long > vecInd, vecLocalInd;
         map<unsigned long, vector<SNP> >::reverse_iterator xit;
 
         for(xit=mapOfMaps.rbegin(); xit!=mapOfMaps.rend(); ++xit)
@@ -168,8 +169,9 @@ namespace libcbk
         }
 
         SNP *si, *sj;
-        p1=unsigned(vecPtSNP[0]->second.size()*0.01);
+        p1=(unsigned long)(vecPtSNP[0]->second.size()*0.01);
         if(p1<1) p1=10;
+        unsigned sizetmp;
         for(i=0; i<vecPtSNP[0]->second.size(); ++i) // for each SNP in the HD map
         {
             si = &(vecPtSNP[0]->second[i]);
@@ -183,14 +185,17 @@ namespace libcbk
             for(j=1; j<vecInd.size(); ++j)  // for each lower density chip
             {
                 sj=&(vecPtSNP[j]->second[vecLocalInd[j]]);   // sj is the pointer pointing to the next SNP of current chip
-                
+                sizetmp = vecPtSNP[j]->second.size();
                 // locate sj
                 // keep moving if
                 //  - sj is before si &&
                 //  - vecInd[j] in safe range &&
                 //  - sj is not si
+                //  - vecLocalInd[j] under index boundary
 
-                while(si->gt(*sj) && vecInd[j]<=vecPtSNP[j]->second.size()-1 && !si->equalsbyID(*sj))
+                while(si->gt(*sj) && vecInd[j]<=sizetmp-1 && !si->equalsbyID(*sj)
+                      // 2017-09-14 boundary check in comparing SNP pos
+                      && sizetmp > vecLocalInd[j])
                     sj=&(vecPtSNP[j]->second[++vecLocalInd[j]]);
 
                 if(si->equalsbyID(*sj))    // matches
