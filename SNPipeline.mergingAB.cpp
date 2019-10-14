@@ -447,8 +447,8 @@ namespace libcbk
             {
                 if(aLine[0]=='#')   // the path line
                 {
-                    sx=aLine.split('#');
-                    curPath=sx[0];
+                    // sx=aLine.split('#');
+                    curPath = aLine;
                     continue;
                 }
                 sx=aLine.split(' ');    //          sx[0]==Sample_ID, [1]==0th SNP AB genotype, etc

@@ -144,7 +144,11 @@ namespace libcbk
         while(getline(infs, aLine)) // for each line
         {
             if(aLine[0]=='#')
-                continue;           // 20141113: skip # lines
+                //continue;           // 20141113: skip # lines
+            {
+                ofs << aLine << endl;
+                continue;
+            }
             vecLine=aLine.split(' ');   // split
             oLine=vecLine[vecIndexShouldBeKept[0]];
             for(i=1; i<vecIndexShouldBeKept.size(); ++i)

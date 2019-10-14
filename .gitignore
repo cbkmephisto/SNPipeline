@@ -1,2 +1,5 @@
 .DS_Store
 SNPipeline.xcodeproj
+bin/*
+obj/*
+

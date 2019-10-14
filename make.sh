@@ -8,9 +8,11 @@
 # In this case SNPipeline.abg2bin wouldn't get compiled but everything else would.
 make
 
+old_dir=$(pwd)
 if [ -d ~/bin ]
 then
     cd ~/bin
-    [ -d ~/SNPipeline/bin ] && ln -sf ~/SNPipeline/bin/* .
+    [ -d "$old_dir/bin" ] && ln -sf "$old_dir"/bin/* .
     cd -
 fi
+
