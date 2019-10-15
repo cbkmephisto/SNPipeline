@@ -54,7 +54,7 @@ int main (int argc, char * const argv[])
         outputMTX = outputPrefix+".mtx_ds";
         splitablestring aLine;
         vector<string>  vecTmp;
-        string          vecCoding[3];
+        string          vecCoding[4];
 
         unsigned utmp;
 
@@ -82,16 +82,18 @@ int main (int argc, char * const argv[])
         
         if(mapCodingXref.find("AA")==mapCodingXref.end()
            || mapCodingXref.find("AB")==mapCodingXref.end()
-           || mapCodingXref.find("BB")==mapCodingXref.end())
+           || mapCodingXref.find("BB")==mapCodingXref.end()
+           || mapCodingXref.find("--")==mapCodingXref.end())
         {
-            cerr << " # rule file did not specified rule(s) for AA, AB, or BB." << endl;
+            cerr << " # rule file did not specified rule(s) for AA, AB, BB, or --" << endl;
             return (-2);
         }
 
-        // missing is not allowed!
+        // missing is now allowed!
         vecCoding[0]=mapCodingXref["AA"];
         vecCoding[1]=mapCodingXref["AB"];
         vecCoding[2]=mapCodingXref["BB"];
+        vecCoding[3]=mapCodingXref["--"];
 
         ////////////////////////////////////////////////////////////////////////////////////////////
         // convert
@@ -146,11 +148,17 @@ int main (int argc, char * const argv[])
                 for(i=1; i<utmp; ++i)
                 {
                     gtmp=vecTmp[i][0]-'A'+vecTmp[i][1]-'A';
-                    if(gtmp>2)
+                    if (vecTmp[i][0] == vecTmp[i][1] && vecTmp[i][1] == '-')
+                    {
+                        gtmp = 3;
+                        // cout << "gtmp is set to 3" << endl;
+                    }
+                    else if(gtmp>3)
                     {
                         cerr << " # Something wroing was in the ab-genotype coding: " << vecTmp[i] << " for animal "
                         << vecTmp[0] << endl;
                         invalidGT = true;
+                        // cout << gtmp << " " << vecTmp[i][0] << " " << vecTmp[i][1] << (vecTmp[i][0] == vecTmp[i][1]) << ('-' == vecTmp[i][1]) << endl;
                         break;
                     }
                     if(gtLine.length())
@@ -178,6 +186,7 @@ int main (int argc, char * const argv[])
         cout << "AA -10" << endl;
         cout << "AB 0" << endl;
         cout << "BB 10" << endl;
+        cout << "-- ??" << endl;
         cout << "**** file content above" << endl;
         cout << " - <output_prefix> defines the prefix name of the output files. 3 output files will be generated:" << endl;
         cout << "   - <output_prefix>.anm_ID, storing animal IDs, one per line" << endl;
